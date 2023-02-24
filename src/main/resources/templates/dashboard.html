@@ -1,0 +1,214 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>User-Dashboard</title>-->
+<!--    <link rel="stylesheet" th:href="@{~/css/dashboard.css}">-->
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<input type="checkbox" id="cart">-->
+<!--<label for="cart" class="label-cart"><span class="fas fa-shopping-cart"></span>-->
+<!--</label>-->
+
+<!--<div class="forms-wrap">-->
+<!--    <form th:action="@{/user/dashboard}" method="post" autocomplete="off" class="sign-btn"></form>-->
+<!--</div>-->
+<!--<h3 class="logo">Dumpling Delights Services</h3>-->
+
+
+<!--<div class="sidebar">-->
+<!--    <div class="sidebar-menu">-->
+<!--        <span class="fas fa-search"></span>-->
+<!--        <a href="#">Search</a>-->
+<!--    </div>-->
+<!--    <div class="sidebar-menu">-->
+<!--        <span class="fas fa-home"></span>-->
+<!--        <a href="#">Home</a>-->
+<!--    </div>-->
+<!--    <div class="sidebar-menu">-->
+<!--        <span class="fas fa-heart"> </span>-->
+<!--        <a href="#">Favs</a>-->
+<!--    </div>-->
+<!--    <div class="sidebar-menu">-->
+<!--        <span class="fas fa-user"></span>-->
+<!--        <a href="#">Profile</a>-->
+<!--    </div>-->
+<!--    <div class="sidebar-menu">-->
+<!--        <span class="fas fa-sliders-h"></span>-->
+<!--        <a href="#">Settings</a>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; dashboard main &ndash;&gt;-->
+<!--<div class="dashboard">-->
+<!--    <div class="dashboard-banner">-->
+<!--        <img th:src="@{~/images/dash.jpg}">-->
+<!--        <div class="banner-promo">-->
+<!--            <h1><span>50% OFF</span><br>-->
+<!--            </h1>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <h3 class="dashboard-title">Recommended For You</h3>-->
+<!--    <div class="dashboard-menu">-->
+<!--        <a href="#">Favourites</a>-->
+<!--        <a href="#">Top Rated</a>-->
+<!--        <a href="#">All</a>-->
+<!--    </div>-->
+
+<!--    <div class="dashboard-content">-->
+<!--        <div class="dasboard-card">-->
+<!--            <img class="card-image" th:src="@{~/images/Living With Locals In Tansen, Nepal.jpg}">-->
+<!--            <div class="card-detail">-->
+<!--                <h4>Steam Chicken MO:MO<span> Rs.150</span></h4>-->
+<!--                <p class="card-time"><span class="fas fa-clock" ></span>15-30mins</p>-->
+<!--            </div>-->
+<!--        </div>-->
+
+
+<!--        <div class="dasboard-card">-->
+<!--            <img class="card-image" th:src="@{~/images/10 Asian Finger Foods for Super Bowl Sunday.png}">-->
+<!--            <div class="card-detail">-->
+<!--                <h4>Kotheys MO:MO<span> Rs.150</span></h4>-->
+<!--                <p class="card-time"><span class="fas fa-clock" ></span>15-30mins</p>-->
+<!--            </div>-->
+<!--        </div>-->
+
+
+<!--        <div class="dasboard-card">-->
+<!--            <img class="card-image" th:src="@{~/images/Bacon, Corn, and Chive Crystal Dumplings — Eat Cho Food.jpg}">-->
+<!--            <div class="card-detail">-->
+<!--                <h4>Steam MO:MO<span> Rs.150</span></h4>-->
+<!--                <p class="card-time"><span class="fas fa-clock" ></span>15-30mins</p>-->
+<!--            </div>-->
+<!--        </div>-->
+
+
+
+<!--        <div class="dasboard-card">-->
+<!--            <img class="card-image" th:src="@{~/images/Spinach Tofu Potstickers by nm_meiyee _ Quick & Easy Recipe  _ The Feedfeed.jpg}">-->
+<!--            <div class="card-detail">-->
+<!--                <h4>Spinach MO:MO<span> Rs.150</span></h4>-->
+<!--                <p class="card-time"><span class="fas fa-clock" ></span>15-30mins</p>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="dasboard-card">-->
+<!--            <img class="card-image" th:src="@{~/images/The Ultimate Guide to Chinese Dumplings.png}">-->
+<!--            <div class="card-detail">-->
+<!--                <h4>Bao Mo:Mo<span> Rs.150</span></h4>-->
+<!--                <p class="card-time"><span class="fas fa-clock" ></span>15-30mins</p>-->
+<!--            </div>-->
+<!--        </div>-->
+
+
+<!--        <div class="dasboard-card">-->
+<!--            <img class="card-image" th:src="@{~/images/down.jpg}">-->
+<!--            <div class="card-detail">-->
+<!--                <h4>Spinach MO:MO<span> Rs.150</span></h4>-->
+<!--                <p class="card-time"><span class="fas fa-clock" ></span>15-30mins</p>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="dasboard-card">-->
+<!--            <img class="card-image" th:src="@{~/images/Home___Little_Fat_Boy-removebg-preview.png}">-->
+<!--            <div class="card-detail">-->
+<!--                <h4>Spinach MO:MO<span> Rs.150</span></h4>-->
+<!--                <p class="card-time"><span class="fas fa-clock" ></span>15-30mins</p>-->
+<!--            </div>-->
+<!--        </div>-->
+
+
+<!--        <div class="dasboard-card">-->
+<!--            <img class="card-image" th:src="@{~/images/How to Make Dumpling Wrappers.jpg}">-->
+<!--            <div class="card-detail">-->
+<!--                <h4>Spinach MO:MO<span> Rs.150</span></h4>-->
+<!--                <p class="card-time"><span class="fas fa-clock" ></span>15-30mins</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+
+<!--<div class="dashboard-order">-->
+<!--    <h3>Order Food</h3>-->
+<!--    <div class="order-address">-->
+<!--        <p>Address Delivery</p>-->
+<!--        <h4>Kathmandu,baneshowr</h4>-->
+<!--    </div>-->
+
+<!--    <div class="order-time">-->
+<!--        <span class="fas-fa-clock"></span>30mins<span class="fas fa-map-marker-alt">2 km</span>-->
+<!--    </div>-->
+
+<!--    <div class="order-wrapper">-->
+<!--        <div class="order-card">-->
+<!--            <img class="order-image" th:src="@{~/images/Living With Locals In Tansen, Nepal.jpg}">-->
+<!--            <div class="order-detail">-->
+<!--                <p>Chicken Momo</p>-->
+<!--                <i class="fas fa-times"></i> <input type="text" value="1">-->
+<!--            </div>-->
+<!--            <h4 class="order-price">Rs 150</h4>-->
+<!--        </div>-->
+
+
+<!--        <div class="order-card">-->
+<!--            <img class="order-image" th:src="@{~/images/Bacon, Corn, and Chive Crystal Dumplings — Eat Cho Food.jpg}">-->
+<!--            <div class="order-detail">-->
+<!--                <p>Pork Momo</p>-->
+<!--                <i class="fas fa-times"></i> <input type="text" value="2">-->
+<!--            </div>-->
+<!--            <h4 class="order-price">Rs 200</h4>-->
+<!--        </div>-->
+
+
+<!--        <div class="order-card">-->
+<!--            <img class="order-image" th:src="@{~/images/Spinach Tofu Potstickers by nm_meiyee _ Quick & Easy Recipe  _ The Feedfeed.jpg}">-->
+<!--            <div class="order-detail">-->
+<!--                <p>Taipo Momo</p>-->
+<!--                <i class="fas fa-times"></i> <input type="text" value="3">-->
+<!--            </div>-->
+<!--            <h4 class="order-price">Rs 180</h4>-->
+<!--        </div>-->
+
+
+<!--        <div class="order-card">-->
+<!--            <img class="order-image" th:src="@{~/images/taipoo.jpg}">-->
+<!--            <div class="order-detail">-->
+<!--                <p>Taipo MO:MO</p>-->
+<!--                <i class="fas fa-times"></i> <input type="text" value="2">-->
+<!--            </div>-->
+<!--            <h4 class="order-price">Rs 200</h4>-->
+<!--        </div>-->
+
+
+<!--        <div class="order-card">-->
+<!--            <img class="order-image" th:src="@{~/images/taipoo.jpg}">-->
+<!--            <div class="order-detail">-->
+<!--                <p>Pork Momo</p>-->
+<!--                <i class="fas fa-times"></i> <input type="text" value="2">-->
+<!--            </div>-->
+<!--            <h4 class="order-price">Rs 200</h4>-->
+<!--        </div>-->
+
+<!--    </div>-->
+<!--    <hr class="divider">-->
+<!--    <div class="order-total">-->
+<!--        <p>Subtotal <span>Rs 500</span></p>-->
+
+<!--        <div class="order-promo">-->
+<!--            <input class="input-promo" type="text" placeholder="Apply Voucher">-->
+<!--            <button class="button-promo">Find Promo</button>-->
+<!--        </div>-->
+<!--        <hr class="divider">-->
+<!--        <p>Total<span>Rs 600</span></p>-->
+<!--    </div>-->
+<!--    <button class="checkout">Checkout</button>-->
+<!--</div>-->
+
+<!--</body>-->
+<!--</html>-->

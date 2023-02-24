@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanji's Dumpling</title>
+    <!-- style link -->
+    <link th:href="@{~/css/style.css}"  rel="stylesheet">
+    <!-- fontawesome link -->
+
+</head>
+<body>
+<!-- header created -->
+<header class="header">
+    <!-- for insertion of logo -->
+
+    <div class="logo">
+        <img th:src="@{~/images/logo2.png}" alt="">
+    </div>
+    <!-- nav bar  -->
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Menu</a>
+        <a href="#">Contact</a>
+    </nav>
+    <!-- icons in navbar -->
+    <div class="icons">
+        <!-- <div id="search-bar" class="fas fa-search"></div> -->
+<!--        <a class="Search-btn" href="#">Search</a>-->
+        <!-- <div id="profile-bar" class="fas fa-user"></div> -->
+        <a class="Signup-btn" th:href="@{/user/register}">Signup</a>
+        <a class="Login-btn" th:href="@{/login}">Login</a>
+
+    </div>
+</header>
+
+
+
+<!-- for displaying main page  -->
+<div class="homee" th:style="'background:url('+ @{~/images/ifun.jpeg} +')'">
+    <div class="main-homee">
+        <div class="homee-inner-content">
+            <div class="homee-image">
+                <!-- pic inserted -->
+                <img th:src="@{~/images/www.png}" alt="" >
+            </div>
+
+            <!-- creating css for this  -->
+            <div class="homee-inner-content">
+                <div class="homee-text-content">
+                    <h1>Welcome to Dumpling Delights</h1>
+                    <p>We are thrilled to have you visit our website and learn more about our restaurant.</p>
+                    <br>
+<!--                    <a th:href="@{~/dispatching}">Order now</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div id="about" class="about">
+    <div class="main-about">
+        <div class="about-content">
+            <div class="about-inner-content">
+                <img th:src="@{~/images/a.jpg}" alt="">
+            </div>
+        </div>
+
+        <div class="about-content">
+            <div class="about-inner-content">
+                <div class="about-text-content">
+                    <h1>About us</h1>
+                    <p>We are a family-owned business that takes pride in serving high-quality, delicious dumplings made with fresh ingredients.
+                        In order to meet your needs, we have dine-in, takeout, and delivery options at our restaurant, which is situated in the center of the city.
+                        Our journey started with a passion for cooking and a desire to share our love for traditional Chinese cuisine. With the help of our experienced chefs, we have created a diverse menu of dumplings that are both authentic and innovative. From classic pork and vegetable dumplings to more unique flavors like shrimp and chive, our dumplings are sure to satisfy your taste buds.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="quality">
+    <div class="main-quality">
+        <div class="main-inner-quality">
+            <div class="quality-content">
+                <h1>Our food quality</h1>
+                <p>At Dumpling Delights, we are committed to using only the freshest and highest-quality ingredients in all of our dishes. We take pride in providing delicious food that is both authentic and innovative, and we source our ingredients from local farmers and markets to ensure their freshness.</p>
+            </div>
+        </div>
+
+        <div class="main-inner-quality">
+            <div class="quality-content qulity-image">
+                <img th:src="@{~/images/pork.png}" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="gallery">
+    <div class="main-gallery">
+        <div class="inner-gallery">
+            <div class="gallery-image">
+                <img th:src="@{~/images/nepal.jpg}" alt="">
+            </div>
+        </div>
+
+        <div class="inner-gallery">
+            <div class="gallery-image">
+                <img th:src="@{~/images/homee.jpeg}" alt="">
+            </div>
+        </div>
+
+        <div class="inner-gallery">
+            <div class="gallery-image">
+                <img th:src="@{~/images/down.jpg}" alt="">
+            </div>
+        </div>
+
+
+        <div class="inner-gallery">
+            <div class="gallery-image">
+                <img th:src="@{~/images/home-display.jpeg}" alt="">
+            </div>
+        </div>
+
+
+        <div class="inner-gallery">
+            <div class="gallery-image">
+                <img th:src="@{~/images/crystal.jpg}" alt="">
+            </div>
+        </div>
+
+        <div class="inner-gallery">
+            <div class="gallery-image">
+                <img th:src="@{~/images/qq.jpg}" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="enjoy-our-food"  th:style="'background:url('+ @{~/images/enjoye.png} +')'">
+<!--    th:style="'background:url('+ @{~/images/enjoye.png} +')-->
+    <div class="food-main-content">
+        <h1>enjoy our food</h1>
+<!--        <img th:src="@{~/images/enjoye.png}" alt="">-->
+        <p>You can enjoy our delicious dumplings wherever you are, whether at home or in the office.Thank you for considering Dumpling Delights for your next meal. We look forward to serving you and hope you enjoy our food as much as we enjoy preparing it for you.</p>
+    </div>
+</div>
+
+<!--<div class="our-menu-food">-->
+<!--    <h1>our menu</h1>-->
+<!--    <div class="main-menu-food">-->
+<!--        <div class="inner-menu-food">-->
+<!--            <div class="menu-food-content">-->
+<!--                <img th:src="@{~/images/scallions.png}" alt="">-->
+
+<!--                <div class="menu-food-text">-->
+<!--                    <h2>Pork Dumplings</h2>-->
+<!--                    <p>Pork dumplings are juicy and served with spicy chilli oil .</p>-->
+<!--                    <p>Price / Rs.300</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="inner-menu-food">-->
+<!--            <div class="menu-food-content">-->
+<!--                <img th:src="@{~/images/nepali.jpg}" alt="">-->
+
+<!--                <div class="menu-food-text">-->
+<!--                    <h2>Chicken Momo with chutney</h2>-->
+<!--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut ab sit facere enim sint laboriosam optio minima! Quo neque quaerat veniam consequuntur assumenda, ducimus commodi, culpa autem error, sint consectetur.</p>-->
+<!--                    <p>Price/ Rs.120</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="inner-menu-food">-->
+<!--            <div class="menu-food-content">-->
+<!--                <img th:src="@{/images/taipoo.jpg}" alt="">-->
+<!--                <div class="menu-food-text">-->
+<!--                    <h2>Taipo momo</h2>-->
+<!--                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius vitae nesciunt, vel iure neque explicabo rerum. Perspiciatis veniam, consectetur aperiam, asperiores sapiente cupiditate maxime ad quos consequatur in reprehenderit consequuntur.</p>-->
+<!--                    <p>Price / Rs.200</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--for add to cart-->
+<!--<h2 style="text-align:center">Product Card</h2>-->
+<!--<div class="card" style="height:100%">-->
+<!--    <img src="nepali.jpg" alt="Momo" style="width: 100%">-->
+<!--    <h1>MO:MO</h1>-->
+<!--    <p class="price">Rs.150</p>-->
+<!--    <p>Momo is delicioushgfdsdfghjhgfdfghjgfgh.</p>-->
+<!--    <p><button>Add to Cart</button></p>-->
+<!--</div>-->
+
+<!--<section class="food container">-->
+<!--    <h2 class="section-title">Our Food Items</h2>-->
+<!--    <div class="food-content">-->
+<!--        <div class="product-box">-->
+<!--            <img th:src="@{~/images/nepali.jpg}" alt="">-->
+<!--           <h2 class="product-title">Chicken Mo:Mo</h2>-->
+<!--            <span class="price">Rs.150</span>-->
+<!--            <i class="bx-bx-shopping-bag add-cart"></i>-->
+
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+
+<section class="app" id="contact">
+    <div class="image">
+        <img th:src="@{~/images/Screenshot_2023-02-20_083116-removebg-preview.png}" alt="" />
+    </div>
+    <div class="content">
+        <h3>Place your order through our app</h3>
+        <p>
+            You can easily place your order using our mobile app. Now you can
+            download our app for both IOS and Android mobiles.
+        </p>
+        <div class="links">
+            <img th:src="@{~/images/app.png}" alt="" />
+            <img th:src="@{~/images/googlee.png}" alt="" />
+        </div>
+    </div>
+</section>
+
+
+
+
+<script th:src="@{~js/script.js}"></script>
+
+</body>
+</html>
